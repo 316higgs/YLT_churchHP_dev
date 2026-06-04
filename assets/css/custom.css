@@ -1,0 +1,169 @@
+/*### Top movie ###*/
+/*scaling*/
+.hero-video-wrap {
+  position: relative;
+  width: 100vw;
+  height: 56.25vw;        
+  max-height: 1080px;   
+  overflow: hidden;
+  background: #000;
+	
+	margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+
+/*position tuning*/
+.hero-video-wrap video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+body.page-id-8846 .page-header {
+ background-image: url(http://yokohamastaging.local/wp-content/uploads/2025/12/messageImage_1762587162894.jpg);
+ background-size: cover;
+ background-position: center center;
+ background-repeat: no-repeat;
+ min-height: clamp(230px, 30vh, 480px);
+ display: flex;
+ align-items: center;
+}
+
+body.page-id-19 .page-header {
+ background-image: url(
+ http://yokohamastaging.local/wp-content/uploads/2025/12/DSC03536-scaled.jpg);
+ background-size: cover;
+ background-position: center 50%;
+ background-repeat: no-repeat;
+ min-height: clamp(230px, 30vh, 480px);
+ display: flex;
+ align-items: center;
+}
+
+/* 私たちについて タイトル画 */
+body.page-id-962 .page-header {
+ background-image: url(http://yokohamastaging.local/wp-content/uploads/2026/05/IMG_0335.tif);
+ background-size: 108% auto;
+ background-position: 5% 56%;
+ background-repeat: no-repeat;
+ min-height: clamp(230px, 30vh, 480px);
+ display: flex;
+ align-items: center;
+}
+
+/* Title remover */
+body.page-id-962 .page-header-title {
+    display: none !important;
+}
+
+/*
+body.page-id-962 .page-header {
+ background-image: url(http://yokohamastaging.local/wp-content/uploads/2026/02/教会外観イラスト青空薄.jpg);
+ background-size: 108% auto;
+ background-position: 5% 56%;
+ background-repeat: no-repeat;
+ min-height: clamp(230px, 30vh, 480px);
+ display: flex;
+ align-items: center;
+}*/
+
+body.page-id-8843 .page-header {
+ background-image: url(http://yokohamastaging.local/wp-content/uploads/2026/01/愛川ぼかし.png);
+ background-size: 110% auto;
+ background-position:0% center;
+ background-repeat: no-repeat;
+ min-height: clamp(230px, 20vh, 480px);
+ display: flex;
+ align-items: center;
+}
+
+body.page-id-17 .page-header {
+ background-image: url(http://yokohamastaging.local/wp-content/uploads/2025/12/bkg.003.png
+);
+ background-size: 0% auto;
+ background-position: center center;
+ background-repeat: no-repeat;
+ min-height: clamp(230px, 30vh, 480px);
+ display: flex;
+ align-items: center;
+}
+
+
+body.page-id-8841 .page-header {
+ background-image: url(http://yokohamastaging.local/wp-content/uploads/2026/02/ori_教会イラスト.jpg);
+ background-size: 150% auto;
+ background-position: center 60%;
+ background-repeat: no-repeat;
+ min-height: clamp(230px, 30vh, 480px);
+ display: flex;
+ align-items: center;
+}
+/* 特定のページ（page-id-XXXX）のタイトル色を変える */
+body.page-id-8841 .page-header .page-header-title {
+    color: #222222 !important; /* 好きな色コードに */
+    text-shadow: 0 0 10px rgba(0,0,0,0.0); /* 画像の上で文字が見にくい場合は影を足すと◎ */
+}
+
+.simple-heading {
+	border: none !important;
+	padding: 0 !important;
+	background: none !important;
+}
+
+.simple-heading::before,
+.simple-heading::after {
+	display: none !important;
+}
+
+/* フッター全体の背景色と文字色を変える */
+.site-footer {
+    background-color: #bbdde6 !important;
+    color: #ffffff !important;       
+}
+
+/* フッター内のリンクの色も変えたい場合 */
+.site-footer a {
+    color: #ffffff !important;
+}
+
+/* フッター内の文字をすべて真ん中に寄せる */
+.site-footer {
+    text-align: center !important;
+}
+
+/* もしウィジェットを使っている場合、それも中央に寄せる */
+.site-footer .widget {
+    text-align: center !important;
+}
+
+/* フッターのウィジェット内をすべて中央に揃える */
+.site-footer .widget {
+    display: flex !important;
+    flex-direction: column !important; /* 上下に並べる */
+    align-items: center !important;    /* 左右の中央に寄せる */
+    text-align: center !important;     /* 文字も中央寄せ */
+}
+
+/* 画像ブロック特有の余白をリセットして中央へ */
+.site-footer .widget .wp-block-image {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center !important;
+    display: block !important;
+}
+
+/* リンク（文字）の配置を整える */
+.site-footer .widget a {
+    display: inline-block !important;
+    margin: 0 auto !important;
+}
+
+.page-header h1 {
+    color: rgb(44, 44, 44) !important;
+	  font-size: 50px;
+}
