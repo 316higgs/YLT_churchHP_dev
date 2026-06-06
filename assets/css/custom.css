@@ -1,18 +1,20 @@
-/*### Top movie ###*/
-/*scaling*/
+/* ==========================================================================
+   Top movie
+   ========================================================================== */
+
+/* Keep the hero video full-width with a 16:9 aspect ratio. */
 .hero-video-wrap {
   position: relative;
   width: 100vw;
-  height: 56.25vw;        
-  max-height: 1080px;   
+  height: 56.25vw;
+  max-height: 1080px;
   overflow: hidden;
   background: #000;
-	
-	margin-left: calc(50% - 50vw);
+  margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
 }
 
-/*position tuning*/
+/* Center and crop the video within the hero area. */
 .hero-video-wrap video {
   position: absolute;
   top: 50%;
@@ -24,146 +26,214 @@
 }
 
 
+/* ==========================================================================
+   Page headers
+   ========================================================================== */
+
 body.page-id-8846 .page-header {
- background-image: url(http://yokohamastaging.local/wp-content/uploads/2025/12/messageImage_1762587162894.jpg);
- background-size: cover;
- background-position: center center;
- background-repeat: no-repeat;
- min-height: clamp(230px, 30vh, 480px);
- display: flex;
- align-items: center;
+  background-image: url(http://yokohamastaging.local/wp-content/uploads/2025/12/messageImage_1762587162894.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: clamp(230px, 30vh, 480px);
+  display: flex;
+  align-items: center;
 }
 
 body.page-id-19 .page-header {
- background-image: url(
- http://yokohamastaging.local/wp-content/uploads/2025/12/DSC03536-scaled.jpg);
- background-size: cover;
- background-position: center 50%;
- background-repeat: no-repeat;
- min-height: clamp(230px, 30vh, 480px);
- display: flex;
- align-items: center;
+  background-image: url(http://yokohamastaging.local/wp-content/uploads/2025/12/DSC03536-scaled.jpg);
+  background-size: cover;
+  background-position: center 50%;
+  background-repeat: no-repeat;
+  min-height: clamp(230px, 30vh, 480px);
+  display: flex;
+  align-items: center;
 }
 
-/* 私たちについて タイトル画 */
+/* About page header image. */
 body.page-id-962 .page-header {
- background-image: url(http://yokohamastaging.local/wp-content/uploads/2026/05/IMG_0335.tif);
- background-size: 108% auto;
- background-position: 5% 56%;
- background-repeat: no-repeat;
- min-height: clamp(230px, 30vh, 480px);
- display: flex;
- align-items: center;
+  background-image: url(http://yokohamastaging.local/wp-content/uploads/2026/05/IMG_0335.tif);
+  background-size: 108% auto;
+  background-position: 5% 56%;
+  background-repeat: no-repeat;
+  min-height: clamp(230px, 30vh, 480px);
+  display: flex;
+  align-items: center;
 }
 
-/* Title remover */
+/* Hide the About page header title. */
 body.page-id-962 .page-header-title {
-    display: none !important;
+  display: none !important;
 }
 
 /*
 body.page-id-962 .page-header {
- background-image: url(http://yokohamastaging.local/wp-content/uploads/2026/02/教会外観イラスト青空薄.jpg);
- background-size: 108% auto;
- background-position: 5% 56%;
- background-repeat: no-repeat;
- min-height: clamp(230px, 30vh, 480px);
- display: flex;
- align-items: center;
-}*/
+  background-image: url(http://yokohamastaging.local/wp-content/uploads/2026/02/教会外観イラスト青空薄.jpg);
+  background-size: 108% auto;
+  background-position: 5% 56%;
+  background-repeat: no-repeat;
+  min-height: clamp(230px, 30vh, 480px);
+  display: flex;
+  align-items: center;
+}
+*/
 
 body.page-id-8843 .page-header {
- background-image: url(http://yokohamastaging.local/wp-content/uploads/2026/01/愛川ぼかし.png);
- background-size: 110% auto;
- background-position:0% center;
- background-repeat: no-repeat;
- min-height: clamp(230px, 20vh, 480px);
- display: flex;
- align-items: center;
+  background-image: url(http://yokohamastaging.local/wp-content/uploads/2026/01/愛川ぼかし.png);
+  background-size: 110% auto;
+  background-position: 0% center;
+  background-repeat: no-repeat;
+  min-height: clamp(230px, 20vh, 480px);
+  display: flex;
+  align-items: center;
 }
 
 body.page-id-17 .page-header {
- background-image: url(http://yokohamastaging.local/wp-content/uploads/2025/12/bkg.003.png
-);
- background-size: 0% auto;
- background-position: center center;
- background-repeat: no-repeat;
- min-height: clamp(230px, 30vh, 480px);
- display: flex;
- align-items: center;
+  background-image: url(http://yokohamastaging.local/wp-content/uploads/2025/12/bkg.003.png);
+  background-size: 0% auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: clamp(230px, 30vh, 480px);
+  display: flex;
+  align-items: center;
 }
-
 
 body.page-id-8841 .page-header {
- background-image: url(http://yokohamastaging.local/wp-content/uploads/2026/02/ori_教会イラスト.jpg);
- background-size: 150% auto;
- background-position: center 60%;
- background-repeat: no-repeat;
- min-height: clamp(230px, 30vh, 480px);
- display: flex;
- align-items: center;
-}
-/* 特定のページ（page-id-XXXX）のタイトル色を変える */
-body.page-id-8841 .page-header .page-header-title {
-    color: #222222 !important; /* 好きな色コードに */
-    text-shadow: 0 0 10px rgba(0,0,0,0.0); /* 画像の上で文字が見にくい場合は影を足すと◎ */
+  background-image: url(http://yokohamastaging.local/wp-content/uploads/2026/02/ori_教会イラスト.jpg);
+  background-size: 150% auto;
+  background-position: center 60%;
+  background-repeat: no-repeat;
+  min-height: clamp(230px, 30vh, 480px);
+  display: flex;
+  align-items: center;
 }
 
+/* Adjust the header title color for a specific page. */
+body.page-id-8841 .page-header .page-header-title {
+  color: #222222 !important;
+  text-shadow: 0 0 10px rgba(0,0,0,0.0);
+}
+
+/* ==========================================================================
+   Heading utilities
+   ========================================================================== */
+
 .simple-heading {
-	border: none !important;
-	padding: 0 !important;
-	background: none !important;
+  border: none !important;
+  padding: 0 !important;
+  background: none !important;
 }
 
 .simple-heading::before,
 .simple-heading::after {
-	display: none !important;
+  display: none !important;
 }
 
-/* フッター全体の背景色と文字色を変える */
+
+/* ==========================================================================
+   Map
+   ========================================================================== */
+
+/* Center Google Maps embeds on the home page. */
+body.home iframe[src*="google.com/maps"] {
+  display: block;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* ==========================================================================
+   Home message
+   ========================================================================== */
+
+/* Add this class to the home page message group block. */
+body.home .home-message-bg {
+  --home-message-bg-image: url("http://yokohamastaging.local/wp-content/uploads/2026/06/01_トップページ_横浜主真理教会は.png");
+  background-image:
+    linear-gradient(rgba(255,255,255,0.78), rgba(255,255,255,0.78)),
+    var(--home-message-bg-image);
+  background-size: cover;
+  background-position: center 75%;
+  background-repeat: no-repeat;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  padding: clamp(25px, 4vw, 40px) 20px;
+}
+
+body.home .home-message-bg > * {
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body.home .home-message-bg .home-message-title {
+  font-size: clamp(28px, 2.8vw, 42px) !important;
+  line-height: 1.35;
+  font-weight: 700;
+  margin-bottom: clamp(18px, 2.5vw, 32px);
+}
+
+body.home .home-message-bg .home-message-text {
+  font-size: clamp(18px, 1.6vw, 24px) !important;
+  font-weight: 300;
+  line-height: 1.8;
+}
+
+body.home .home-message-bg .home-message-text p {
+  font-size: inherit;
+  line-height: inherit;
+}
+
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+/* Set footer colors. */
 .site-footer {
-    background-color: #bbdde6 !important;
-    color: #ffffff !important;       
+  background-color: #bbdde6 !important;
+  color: #ffffff !important;
 }
 
-/* フッター内のリンクの色も変えたい場合 */
+/* Set footer link colors. */
 .site-footer a {
-    color: #ffffff !important;
+  color: #ffffff !important;
 }
 
-/* フッター内の文字をすべて真ん中に寄せる */
+/* Center footer text. */
 .site-footer {
-    text-align: center !important;
+  text-align: center !important;
 }
 
-/* もしウィジェットを使っている場合、それも中央に寄せる */
+/* Center footer widgets. */
 .site-footer .widget {
-    text-align: center !important;
+  text-align: center !important;
 }
 
-/* フッターのウィジェット内をすべて中央に揃える */
+/* Align footer widget content in a centered vertical stack. */
 .site-footer .widget {
-    display: flex !important;
-    flex-direction: column !important; /* 上下に並べる */
-    align-items: center !important;    /* 左右の中央に寄せる */
-    text-align: center !important;     /* 文字も中央寄せ */
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  text-align: center !important;
 }
 
-/* 画像ブロック特有の余白をリセットして中央へ */
+/* Center image blocks inside footer widgets. */
 .site-footer .widget .wp-block-image {
-    margin-left: auto !important;
-    margin-right: auto !important;
-    text-align: center !important;
-    display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  text-align: center !important;
+  display: block !important;
 }
 
-/* リンク（文字）の配置を整える */
+/* Center linked text inside footer widgets. */
 .site-footer .widget a {
-    display: inline-block !important;
-    margin: 0 auto !important;
+  display: inline-block !important;
+  margin: 0 auto !important;
 }
 
 .page-header h1 {
-    color: rgb(44, 44, 44) !important;
-	  font-size: 50px;
+  color: rgb(44, 44, 44) !important;
+  font-size: 50px;
 }
